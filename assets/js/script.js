@@ -127,6 +127,8 @@ filterBtn.forEach(btn => {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const successMessage = document.getElementById("success-message");
+
 
 formInputs.forEach(input => {
     input.addEventListener("input", function () {
@@ -136,4 +138,27 @@ formInputs.forEach(input => {
             formBtn.setAttribute("disabled", "");
         }
     });
+});
+
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); 
+
+
+  if (form.checkValidity()) {
+
+    successMessage.style.display = "block";
+
+
+    formInputs.forEach(input => {
+      if (input.value) {
+        input.value = ''; 
+      }
+    });
+
+
+    setTimeout(() => {
+      successMessage.style.display = 'none';
+    }, 3000); 
+  }
 });
