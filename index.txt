@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Sanath Waghela
+Sanath Waghela
+Devops Engineer
 
 Show Contacts
 
 Email
-richard@example.com
+sanathw55@gmail.com
 
 Phone
-+1 (213) 352-2795
++91 9518394320
 
 Birthday
-June 23, 1982
+May 27, 2000
 
 Location
-Sacramento, California, USA
+Greater Noida, India
 
 # navbar
 
